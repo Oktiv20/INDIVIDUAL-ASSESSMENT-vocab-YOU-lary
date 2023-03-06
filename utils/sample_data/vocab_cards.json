@@ -1,0 +1,81 @@
+{
+  "-NPn7Se7Pu7FFXDljn4U": {
+    "definition": "A loop is a programming tool that is used to repeat a set of instructions. Iterate is a generic term that means “to repeat” in the context of loops. A loop will continue to iterate until a specified condition, commonly known as a stopping condition, is met.",
+    "language_tech": "JavaScript",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Loops",
+    "uid": ""
+  },
+  "-NPnA_3zW2t3vrldXo-6": {
+    "definition": "Strings are a primitive data type. They are any grouping of characters (letters, spaces, numbers, or symbols) surrounded by single quotes ' or double quotes ",
+    "language_tech": "JavaScript",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Strings",
+    "uid": ""
+  },
+  "-NPnAxZvTU4FJHxa3Q3x": {
+    "definition": "Events are things that happen in HTML objects that can trigger scripting code. JavaScript can be executed by events in HTML via two methods: The JavaScript code can appear within the appropriate HTML attribute in the HTML object. Or a separate script can define an event handler on the object that executes when the event is fired.",
+    "firebaseKey": "-NPnAxZvTU4FJHxa3Q3x",
+    "language_tech": "JavaScript",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Events",
+    "uid": ""
+  },
+  "-NPoFvwWMv_9YNGCWy5P": {
+    "definition": "Attributes can be added to the opening tag of an HTML element to change its default behavior or provide additional data about it.",
+    "firebaseKey": "-NPoFvwWMv_9YNGCWy5P",
+    "language_tech": "HTML",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Attributes",
+    "uid": ""
+  },
+  "-NPoGaQ2gZ4mulVPxcIP": {
+    "definition": "In HTML, forms are used for gathering and sending user input to an external source (like a server) for processing. This is done with the <form> tag, which contains various labels and inputs.",
+    "firebaseKey": "-NPoGaQ2gZ4mulVPxcIP",
+    "language_tech": "HTML",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Forms",
+    "uid": ""
+  },
+  "-NPoH4Ajfm8B9nPaPsg3": {
+    "definition": "Classes are HTML attributes used to select one or more elements for CSS styling or JavaScript purposes.",
+    "firebaseKey": "-NPoH4Ajfm8B9nPaPsg3",
+    "language_tech": "HTML",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Classes",
+    "uid": ""
+  },
+  "-NPoHMRgVEWTgLo_P4m5": {
+    "definition": "The Flexible Box Layout, commonly known as Flexbox, is a new layout model that allows responsive elements within a container to be automatically arranged depending upon the screen size.",
+    "firebaseKey": "-NPoHMRgVEWTgLo_P4m5",
+    "language_tech": "CSS",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Flexbox",
+    "uid": ""
+  },
+  "-NPoI5NDq9ErAxoUBtwf": {
+    "definition": "Margin refers to the space directly outside of the box. The margin property is used to specify the size of this space.",
+    "firebaseKey": "-NPoI5NDq9ErAxoUBtwf",
+    "language_tech": "CSS",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Margins",
+    "uid": ""
+  },
+  "-NPoIwZl1-npSIboxXB7": {
+    "definition": "The box-sizing property allows us to include the padding and boarder in the calculation of an element/s height and width. This is a slightly more advanced so no need to use it if you are just getting started to code.",
+    "firebaseKey": "-NPoIwZl1-npSIboxXB7",
+    "language_tech": "CSS",
+    "tech_id": "",
+    "timeStamp": "4:00",
+    "title": "Box Sizing",
+    "uid": ""
+  }
+}
