@@ -3,8 +3,15 @@
 
 
 body {
-  background-color: antiquewhite;
+  background-color: slategray;
   color: brown;
   text-align: center;
   margin-top: 100px;
+}
+
+.navbar-dark .navbar-brand {
+  font-family: "Georgia", cursive !important;
+  color: lightgray;
+  font-weight: 900;
+  font-size: 2em;
 }
