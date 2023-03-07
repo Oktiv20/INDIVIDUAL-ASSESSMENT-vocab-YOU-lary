@@ -26,6 +26,9 @@ const navBar = () => {
               aria-label="Search"
             />
             </li>
+            <li class="nav-entry">
+              <a class="nav-link" href="#" id="entries">Add An Entry</a>
+            </li>
           </ul>
           <span class="navbar-text">
             <div id="cart-button"></div>
