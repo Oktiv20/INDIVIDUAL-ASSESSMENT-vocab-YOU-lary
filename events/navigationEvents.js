@@ -7,16 +7,16 @@ import {
 
 // navigation events
 const navigationEvents = (user) => {
-  // LOGOUT BUTTON
+  //  CLICK FOR LOGOUT BUTTON
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
 
-  // SHOW ENTRIES
+  //  CLICK FOR SHOW ENTRIES
   document.querySelector('#all-entries').addEventListener('click', () => {
     getEntries(user.uid).then(showEntries);
   });
 
-  // CLICK EVENT FOR SHOWING FORM FOR ADDING AN ENTRY
+  // CLICK FOR SHOWING ADD ENTRY FORM
   document.querySelector('#entries').addEventListener('click', () => {
     addEntryForm();
   });
