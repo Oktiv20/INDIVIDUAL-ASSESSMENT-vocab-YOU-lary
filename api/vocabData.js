@@ -82,7 +82,6 @@ const deleteEntry = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // FILTER ENTRY
-
 const getJavaScriptEntries = (uid) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/vocab_cards.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',

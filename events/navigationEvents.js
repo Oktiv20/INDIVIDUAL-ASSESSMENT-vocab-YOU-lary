@@ -7,11 +7,11 @@ import {
 
 // navigation events
 const navigationEvents = (user) => {
-  //  CLICK FOR LOGOUT BUTTON
+  // CLICK FOR LOGOUT BUTTON
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
 
-  //  CLICK FOR SHOW ENTRIES
+  // CLICK FOR SHOW ENTRIES
   document.querySelector('#all-entries').addEventListener('click', () => {
     getEntries(user.uid).then(showEntries);
   });
@@ -19,6 +19,17 @@ const navigationEvents = (user) => {
   // CLICK FOR SHOWING ADD ENTRY FORM
   document.querySelector('#entries').addEventListener('click', () => {
     addEntryForm();
+  });
+
+  // STRETCH: SEARCH
+  document.querySelector('#search').addEventListener('keyup', (e) => {
+    const searchValue = document.querySelector('#search').value;
+
+    if (e.keyCode === 13) {
+      getEntries(user.uid).then((data) => data.filter((index) => index.title.toLowerCase().includes(searchValue)
+        || index.languageTech.toLowerCase().includes(searchValue))).then(showEntries);
+      document.querySelector('#search').value = '';
+    }
   });
 };
 

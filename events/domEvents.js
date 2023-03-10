@@ -6,12 +6,12 @@ import { showEntries } from '../pages/entries';
 
 function domEvents(user) {
   document.querySelector('#main-page').addEventListener('click', (e) => {
-    // CLICK EVENT FOR SHOWING FORM FOR ADDING AN ENTRY
+    // CLICK FOR SHOWING ADD ENTRY FORM
     if (e.target.id.includes('entries')) {
       addEntryForm(user.uid);
     }
 
-    // CLICK EVENT EDITING/UPDATING AN ENTRY
+    // CLICK FOR EDITING/UPDATING AN ENTRY
     if (e.target.id.includes('edit-entry-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleEntry(firebaseKey).then((entryObj) => addEntryForm(entryObj));
@@ -27,9 +27,9 @@ function domEvents(user) {
       }
     }
   });
+
+  // CLICK FOR FILTER BUTTONS
   document.querySelector('#view').addEventListener('click', () => {
-  // CLICK EVENTS FOR FILTER BUTTONS
-    // Filter
     document.querySelector('#html-btn').addEventListener('click', () => {
       getHTMLEntries(user.uid).then(showEntries);
     });

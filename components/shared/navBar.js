@@ -18,6 +18,14 @@ const navBar = () => {
             <li class="nav-item">
               <a class="nav-link" href="#" id="entries">Add An Entry</a>
             </li>
+            <li>
+            <input
+            class="form-control mr-sm-1"
+            id="search"
+            placeholder="Search Entries"
+            aria-label="Search"
+            />
+            </li>
           </ul>
           <span class="navbar-text">
             <div id="cart-button"></div>
