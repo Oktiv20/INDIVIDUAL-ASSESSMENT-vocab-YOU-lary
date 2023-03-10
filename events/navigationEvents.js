@@ -1,25 +1,24 @@
 import { showEntries } from '../pages/entries';
 import { signOut } from '../utils/auth';
 import addEntryForm from '../components/forms/addEntryForm';
-import { getEntries } from '../api/vocabData';
+import {
+  getEntries,
+} from '../api/vocabData';
 
 // navigation events
-const navigationEvents = () => {
+const navigationEvents = (user) => {
   // LOGOUT BUTTON
   document.querySelector('#logout-button')
     .addEventListener('click', signOut);
 
-  // ALL ENTRIES
+  // SHOW ENTRIES
   document.querySelector('#all-entries').addEventListener('click', () => {
-    getEntries().then(showEntries);
+    getEntries(user.uid).then(showEntries);
   });
 
-  document.querySelector('#navigation').addEventListener('click', (e) => {
-    // CLICK EVENT FOR SHOWING FORM FOR ADDING AN ENTRY
-    if (e.target.id.includes('entries')) {
-      console.warn('ADD ENTRY');
-      addEntryForm();
-    }
+  // CLICK EVENT FOR SHOWING FORM FOR ADDING AN ENTRY
+  document.querySelector('#entries').addEventListener('click', () => {
+    addEntryForm();
   });
 };
 

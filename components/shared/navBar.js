@@ -10,30 +10,19 @@ const navBar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#" id="all-entries">
                 All Entries <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="languages">Languages/Tech</a>
-            </li>
-            <li>
-            <input
-              class="form-control mr-sm-1"
-              id="search"
-              placeholder="Search Definitions"
-              aria-label="Search"
-            />
-            </li>
-            <li class="nav-entry">
               <a class="nav-link" href="#" id="entries">Add An Entry</a>
             </li>
           </ul>
           <span class="navbar-text">
             <div id="cart-button"></div>
             <div id="logout-button">
-              <div id="login-form-container"></div>
+            <div id="login-form-container"></div>
             </div>
           </span>
         </div>

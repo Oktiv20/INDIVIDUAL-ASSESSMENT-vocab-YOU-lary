@@ -4,7 +4,7 @@
 
 body {
   background-color: slategray;
-  color: brown;
+  color: black;
   // text-align: center;
   margin-top: 100px;
 }
@@ -21,16 +21,16 @@ body {
   overflow: scroll;
 }
 
-// .grey-box {
-//   float: left;
-//   margin: 2px;
-//   width: 200px;
-//   height: 200px;
-// }
+.grey-box {
+  float: left;
+  margin: 2px;
+  width: 200px;
+  height: 200px;
+}
 
-// #cart-thumb img {
-//   height: 100px;
-// }
+#cart-thumb img {
+  height: 100px;
+}
 
 .logout {
   margin: 0 20px;
@@ -61,7 +61,7 @@ body {
     }
   }
 
-  #store {
+  #main-page {
     width: 90%;
     display: flex;
     flex-flow: row wrap;
@@ -80,4 +80,23 @@ body {
       }
     }
   }
-};
+}
+
+.card-definition {
+  height: 200px;
+}
+
+.card-body {
+  background-color: lightgray;
+}
+
+#display-3 {
+  text-align: center;
+  color: black;
+}
+
+#login-button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
