@@ -16,9 +16,9 @@ const showEntries = (array) => {
     domString += `
       <div class="card">
         <div class="card-body" style="height: 50%;">
-          <h5 class="card-title">${item.title}</h5>
-          <br>
-          <h5 class="card-language">Category: ${item.languageTech}</h5>
+          <h2 class="card-title">${item.title}</h2>
+          <hr>
+          <h4 class="card-language">Category: ${item.languageTech}</h4>
           <br>
           <p class="card-definition">${item.definition}</p>
           <br>

@@ -5,7 +5,7 @@ const formEvents = (user) => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // CLICK EVENT FOR SUBMITTING FORM FOR ADDING AN ENTRY
+    // CLICK FOR ADDING AN ENTRY
     if (e.target.id.includes('submit-entry')) {
       const payload = {
         title: document.querySelector('#title').value,
@@ -31,6 +31,7 @@ const formEvents = (user) => {
         definition: document.querySelector('#definition').value,
         languageTech: document.querySelector('#language').value,
         firebaseKey,
+        time: new Date().toLocaleString(),
       };
       updateEntries(payload).then(() => {
         getEntries(user.uid).then(showEntries);
