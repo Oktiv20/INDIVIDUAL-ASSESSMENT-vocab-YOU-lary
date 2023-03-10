@@ -1,22 +1,22 @@
 import { getEntries } from '../api/vocabData';
+import filterButtons from '../components/buttons/filterButtons';
 import logoutButton from '../components/buttons/logoutButton';
 import domBuilder from '../components/shared/domBuilder';
 import navBar from '../components/shared/navBar';
-// import domEvents from '../events/domEvents';
-// import formEvents from '../events/formEvents';
+import domEvents from '../events/domEvents';
+import formEvents from '../events/formEvents';
 import navigationEvents from '../events/navigationEvents';
 import { showEntries } from '../pages/entries';
 
-const startApp = () => {
-  domBuilder(); // BUILD THE DOM
-  // domEvents(user); // ADD THE EVENT LISTENTERS TO THE DOM
-  // formEvents(user); // ADD FORM EVENT LISTENTERS TO THE DOM
-  navBar(); // DYNAMICALLY ADD THE NAV
-  logoutButton(); // ADD THE LOGOUT BUTTON COMPONENT
-  navigationEvents(); // ATTACH THE EVENT LISTENERS TO THE NAVBAR
-
-  // Put all books on the DOM on App load
-  getEntries().then(showEntries);
+const startApp = (user) => {
+  domBuilder();
+  domEvents(user);
+  formEvents(user);
+  filterButtons(user);
+  navBar();
+  logoutButton();
+  navigationEvents(user);
+  getEntries(user.uid).then(showEntries);
 };
 
 export default startApp;
