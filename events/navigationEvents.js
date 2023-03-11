@@ -4,6 +4,8 @@ import addEntryForm from '../components/forms/addEntryForm';
 import {
   getEntries,
 } from '../api/vocabData';
+// import { getLanguageTech } from '../api/languageData';
+// import { showLanguageTech } from '../pages/languageTech';
 
 // navigation events
 const navigationEvents = (user) => {
@@ -20,6 +22,12 @@ const navigationEvents = (user) => {
   document.querySelector('#entries').addEventListener('click', () => {
     addEntryForm();
   });
+
+  // CLICK FOR SHOW LANGUAGE/TECH
+  // document.querySelector('#all-languageTech').addEventListener('click', () => {
+  //   console.warn('getting closer');
+  //   getLanguageTech(user.uid).then(showLanguageTech);
+  // });
 
   // STRETCH: SEARCH
   document.querySelector('#search').addEventListener('keyup', (e) => {
