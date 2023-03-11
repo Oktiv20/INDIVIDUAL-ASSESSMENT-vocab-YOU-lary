@@ -11,6 +11,7 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         languageTech: document.querySelector('#language').value,
+        tech_id: document.querySelector('#tech_id'),
         uid: user.uid,
         time: new Date().toLocaleString(),
       };
@@ -30,6 +31,7 @@ const formEvents = (user) => {
         title: document.querySelector('#title').value,
         definition: document.querySelector('#definition').value,
         languageTech: document.querySelector('#language').value,
+        tech_id: document.querySelector('#tech_id'),
         firebaseKey,
         time: new Date().toLocaleString(),
       };
