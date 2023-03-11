@@ -15,8 +15,8 @@ Any User
 User is prompted with a home page that prompts them to log into the app to get started. After logging in, they are shown a list of vocabulary terms that they have submitted and can only view, edit, and delete the entries they created. The user can use the filter buttons to filter the cards by Language/Tech buttons, they can add a new term by filling in the add entry form and each card has the option to edit and delete the entry that the user chooses.
 
 # Screenshots of the project
-images/Home Page.png
-images/All Entries View.png
-images/Add Entry Form.png
+Home Page.png
+All Entries View.png
+Add Entry Form.png
 # List of contributors and links to their GH profiles
 Kyle Blunt https://github.com/Oktiv20/INDIVIDUAL-ASSESSMENT-vocab-YOU-lary
