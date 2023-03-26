@@ -1,7 +1,7 @@
 # VOCAB-YOU-LARY
 
 # Overview of Project
-The sorting hat shows the houses and students that are in those houses, allows users to add a new student and after adding, it will randomly assign them a house and display that student by the house. If you choose to, you can "Expel" a student and send them to Voldemort's Army and they won't be a part of the house they were expelled from.
+Vocab-YOU-lary allows users to create, read, update, and delete vocabulary entries in the web application. Users can add specific words or languages to help them learn through their coding journey!
 
 # Relevant Links
 https://www.figma.com/file/rxb8QrfwTIwPjF44LMw190/Vocab-YOU-lary?node-id=0%3A1&t=DTxAmYrdUiMdffUa-0
